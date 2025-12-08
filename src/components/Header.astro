@@ -10,7 +10,7 @@ const { language, translate, langSwitch, siteSettings } = Astro.props
     <!-- Logo -->
     <div class="flex items-center gap-1 z-50">
       <a href={getTransLink(language, `/`)}>
-        <img src={siteSettings.logo.filename} alt={siteSettings.logo.alt} />
+        <img class="max-h-[90px]" src={siteSettings.logo.filename} alt={siteSettings.logo.alt} />
       </a>
     </div>
 
@@ -43,12 +43,6 @@ const { language, translate, langSwitch, siteSettings } = Astro.props
     <!-- Desktop right side -->
     <div class="flex items-center gap-4 md:justify-self-end">
       <LanguageSwitcher langSwitch={langSwitch} language={language} />
-      <a
-        href={getTransLink(language, ``)}
-        class="button--glass hidden md:block text-white px-3 py-1.5 text-sm bg-black/20 backdrop-blur-sm"
-      >
-        {translate.becomeMember}
-      </a>
 
       <!-- Hamburger Button -->
       <button
