@@ -26,7 +26,7 @@
   font-family: 'Adamina';
   font-style: normal;
   font-weight: 400;
-  src: url('/fonts/adamina-v21-latin-regular.ttf') format('woff2');
+  src: url('../fonts/adamina-v21-latin-regular.ttf') format('woff2');
 }
 
 @media (min-width: 1024px) {
