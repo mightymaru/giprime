@@ -23,10 +23,10 @@
 
 @font-face {
   font-display: swap;
-  font-family: "Zen Kaku Gothic New", sans-serif;
-  font-style: black;
-  font-weight: 900;
-  src: url('/fonts/ZenKakuGothicNew-Black.ttf') format('ttf');
+  font-family: 'Adamina';
+  font-style: normal;
+  font-weight: 400;
+  src: url('/fonts/adamina-v21-latin-regular.ttf') format('woff2');
 }
 
 @media (min-width: 1024px) {
