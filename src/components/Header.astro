@@ -10,7 +10,7 @@ const { language, translate, langSwitch, siteSettings } = Astro.props
     <!-- Logo -->
     <div class="flex items-center gap-1 z-50">
       <a href={getTransLink(language, `/`)}>
-        <img class="max-h-[90px]" src={siteSettings.logo.filename} alt={siteSettings.logo.alt} />
+        <img class="max-h-[90px] bg-white rounded-lg" src={siteSettings.logo.filename} alt={siteSettings.logo.alt} />
       </a>
     </div>
 
