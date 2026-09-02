@@ -5,7 +5,7 @@ import LanguageSwitcher from './LanguageSwitcher.astro'
 const { language, translate, langSwitch, siteSettings } = Astro.props
 ---
 
-<header class="group absolute top-0 right-0 left-0 border-b border-border z-50" id="header">
+<header class="group absolute top-0 right-0 left-0 border-b border-border z-50 bg-white" id="header">
   <nav class="max-w-[1016px] mx-auto px-6 flex justify-between items-center md:grid md:grid-cols-3 py-6">
     <!-- Logo -->
     <div class="flex items-center gap-1 z-50">
@@ -15,7 +15,7 @@ const { language, translate, langSwitch, siteSettings } = Astro.props
     </div>
 
     <!-- Navigation -->
-    <ul class="fixed inset-0 flex flex-col items-center justify-center gap-8 bg-primary text-white text-2xl transform transition-transform duration-300 md:static md:flex-row md:bg-transparent md:text-[0.81rem] md:gap-0 md:translate-x-0 translate-x-full group-[.is-open]:translate-x-0 min-w-[500]">
+    <ul class="fixed inset-0 flex flex-col items-center justify-center gap-8 bg-primary text-2xl transform transition-transform duration-300 md:static md:flex-row md:bg-transparent md:text-[0.81rem] md:gap-0 md:translate-x-0 translate-x-full group-[.is-open]:translate-x-0 min-w-[500]">
       {siteSettings.navigation.length &&
         siteSettings.navigation.map((navItem) => (
           <li>
