@@ -8,6 +8,8 @@ import isPreview from '../utils/isPreview'
 import generateStaticPaths from '../utils/generateStaticPaths'
 import * as locales from '../locales'
 
+export const prerender = true;
+
 export async function getStaticPaths() {
   return await generateStaticPaths()
 }
