@@ -31,13 +31,6 @@ const primaryColor = colors.primary
     <meta name="twitter:image" content={seo?.twitter_image} />
   </head>
   <body class="font-inter antialiased bg-background text-foreground" style={`--color-primary: ${primaryColor};`}>
-    <!-- A little help for the Netlify bots if you're not using a SSG -->
-    <form name="contact" netlify netlify-honeypot="bot-field" hidden>
-      <input type="text" name="name" />
-      <input type="email" name="email" />
-      <textarea name="message"></textarea>
-    </form>
-
     <Header siteSettings={siteSettings} langSwitch={langSwitch} language={language} translate={translate} />
     <slot />
     <Footer siteSettings={siteSettings} language={language} translate={translate} />
