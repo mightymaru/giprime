@@ -10,7 +10,6 @@ const { blok } = Astro.props;
       method="POST" 
       netlify 
       data-netlify="true" 
-      action={`/${blok.navigationSuccess?.cached_url || ''}`} 
       class="flex flex-col w-[400px]" 
       {...storyblokEditable(blok)}
     >
