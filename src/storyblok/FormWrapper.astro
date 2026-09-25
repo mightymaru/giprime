@@ -5,7 +5,7 @@ import StoryblokComponent from "@storyblok/astro/StoryblokComponent.astro";
 const { blok } = Astro.props;
 ---
 <div class="flex justify-center p-12">
-    <form name="contact" method="POST" netlify action={`/${blok.navigationSuccess.cached_url}`} class="flex flex-col w-[400px]" {...storyblokEditable(blok)}>
+    <form name="contact" netlify action={`/${blok.navigationSuccess.cached_url}`} class="flex flex-col w-[400px]" {...storyblokEditable(blok)}>
         {
             blok.forms?.map((blok) => {
               return <StoryblokComponent blok={blok} />;
