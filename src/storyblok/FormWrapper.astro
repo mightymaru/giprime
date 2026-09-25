@@ -5,7 +5,13 @@ import StoryblokComponent from "@storyblok/astro/StoryblokComponent.astro";
 const { blok } = Astro.props;
 ---
 <div class="flex justify-center p-12">
-    <form name="contact" netlify action={`/${blok.navigationSuccess.cached_url}`} class="flex flex-col w-[400px]" {...storyblokEditable(blok)}>
+    <form name="contact" method="POST" data-netlify="true" netlify="true" netlify-honeypot="bot-field" action={`/${blok.navigationSuccess.cached_url}`} class="flex flex-col w-[400px]" {...storyblokEditable(blok)}>
+        <input type="hidden" name="form-name" value={blok.form_name || "contact"} />
+
+        <p class="hidden">
+          <label>Don’t fill this out if you’re human: <input name="bot-field" /></label>
+        </p>
+
         {
             blok.forms?.map((blok) => {
               return <StoryblokComponent blok={blok} />;
